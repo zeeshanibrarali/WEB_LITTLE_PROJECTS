@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("https://media.istockphoto.com/photos/businessman-hand-pushing-new-technology-button-on-modern-comput-picture-id494225876?b=1&k=20&m=494225876&s=170667a&w=0&h=IEAsT9XZwo4ATmp3nokXCNS6y8gfUFfRjR7A2yLgwNs=");
+    background-size: cover;
+    transition: filter .7s;
+}
+
+h1{
+    font-size: 60px;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn{
+    padding: 10px 20px;
+    width: 200px;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    filter: brightness(0.8);
+    background-color: blue;
+    color: aliceblue;
+}
+.active.container{
+    filter: blur(5px) brightness(0.7);
+}
+.popup-container{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: aliceblue;
+    width: 400px;
+    height: 200px;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: url("https://media.istockphoto.com/photos/businessman-hand-pushing-new-technology-button-on-modern-comput-picture-id477915113?b=1&k=20&m=477915113&s=170667a&w=0&h=MtG352iKEvJxXFTxR1W5f_hJxaGPb3RwVjLe4vy_d4Q=");
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    transition: all 0.7s;
+
+
+}
+h4{
+    font-size: 24px;
+    color:whitesmoke;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+h4:hover{
+    color: yellow;
+}
+.popup-btn{
+    background-color: blue;
+    padding: 10px;
+    font-size: 20px;
+    color: azure;
+    cursor: pointer;
+    border: 2px solid ;
+    margin: 2px 0;
+}
+.popup-btn:hover{
+    color: gold;
+}
+.email{
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+.input{
+    border: 2px solid blue;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.input::placeholder{
+    color: blue;
+    opacity: 0.6
+}
+.close-icon{
+    position: absolute;
+    right: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.close-icon:hover{
+    color: red;
+}
+.active.popup-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}

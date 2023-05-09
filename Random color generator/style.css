@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    font-family: cursive;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.colorcontainer{
+    background-color: orangered;
+    width: 300px;
+    height: 150px;
+    margin: 5px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    border: solid black 2px;
+    border-radius: 10px;
+}
